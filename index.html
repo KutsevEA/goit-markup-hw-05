@@ -55,7 +55,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type=button class="button primary"> Заказать услугу </button>
+                <button data-modal-open type=button class="button primary"> Заказать услугу </button>
             </div>
         </section>              
         
@@ -115,9 +115,38 @@
             <div class="container">
                 <h2 class="topic tasks-title">Чем мы занимаемся</h2>
                 <ul class="tasks-flex-box list">
-                    <li><img width="370" src="images/box-1.jpg" alt="computer"></li>
-                    <li><img width="370" src="images/box-2.jpg" alt="phone"></li>
-                    <li><img width="370" src="images/box-3.jpg" alt="ipad"> </li>
+                    <li>
+                        <div class="what-we-do-item-div">
+                            <img width="370" src="images/box-1.jpg" alt="computer">
+                            <div class="what-we-do-name">
+                                <h3 class="what-we-do-text">
+                                    десктопные приложения
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="what-we-do-item-div">
+                            <img width="370" src="images/box-2.jpg" alt="phone">
+                            <div class="what-we-do-name">
+                                <h3 class="what-we-do-text">
+                                    мобильные приложения
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="what-we-do-item-div">
+                            <img width="370" src="images/box-3.jpg" alt="ipad"> 
+                            <div class="what-we-do-name">
+                                <h3 class="what-we-do-text">
+                                    дизайнерские решения 
+                                </h3>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             
@@ -403,5 +432,15 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <img src="./images/ship.jpeg" alt="russian-warship">
+            <button data-modal-close type="button" class="modal-button">
+                    <img alt="cross" width="30" height="30" class="close-modal-logo" src="./images/modal-close.svg">
+
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
