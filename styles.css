@@ -253,20 +253,23 @@ header {
 }
 
 .button.primary {
+  display: flex;
+  align-items: center;
+
   background-color: var(--button-primary-color);
   color: var(--button-text-primary-color);
+
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
-  padding-left: 32px;
-  padding-right: 32px;
 
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -487,10 +490,10 @@ header {
 .client-box:hover,
 .client-box:focus {
   display: flex;
+
   fill: var(--client-icon-akcent-color);
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--client-icon-akcent-color);
   border-radius: 3px;
 }
@@ -779,11 +782,23 @@ header {
   position: absolute;
   top: 8px;
   right: 8px;
-  fill: #fff;
+  width: 30px;
+  height: 30px;
 
-  border: none;
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
+  background-color: var(--main-bgc-color);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--client-icon-akcent-color);
+  color: var(--button-text-primary-color);
 }
 
 /* Portfolio Modal */
